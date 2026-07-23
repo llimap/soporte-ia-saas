@@ -33,7 +33,6 @@ app.get('/api/test-db', async (req, res) => {
     res.status(500).json({ error: 'Error al conectar con la base de datos', detalle: error.message });
   }
 });
-
 // Iniciar servidor
 app.listen(PORT, () => {
   console.log(`Servidor corriendo en el puerto ${PORT}`);
